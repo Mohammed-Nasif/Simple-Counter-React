@@ -1,4 +1,3 @@
-import React from 'react';
 
 export default function CounterBtn({ isCountUp, countUp, countDown, isCountReset, countReset }) {
 	return (

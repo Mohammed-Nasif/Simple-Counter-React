@@ -1,10 +1,10 @@
-import React from 'react';
 import { useState } from 'react';
 import Counter from '../Counter/Counter';
 import CounterBtn from '../CounterBtn/CounterBtn';
 
 export default function CounterActions() {
 	const [count, setCount] = useState(0);
+
 	const incrementCount = () => {
 		const newCount = count + 1;
 		setCount(newCount);
@@ -18,6 +18,7 @@ export default function CounterActions() {
 	const resetCounter = () => {
 		setCount(0);
 	};
+
 	return (
 		<div className='d-flex flex-column justify-content-center align-items-center mt-5 bg-secondary m-auto w-25 h-25 rounded-4 p-4'>
 			<Counter count={count} />
